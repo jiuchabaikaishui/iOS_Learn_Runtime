@@ -19,17 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    id obj = [[NSObject alloc] init];
+    //Objective-C类是由Class类型来表示的，它实际上是一个指向objc_class结构体的指针。
+    NSObject
     
-//    TestError *error = [TestError errorWithDomain:@"QSP domain" code:1 userInfo:nil];
-//    [error ex_registerClassPair];
-    
-    MyClass *myClass = [[MyClass alloc] init];
-    unsigned int outCount = 0;
-    
-    Class cls = myClass.class;
-    
-    //类名
-    NSLog(@"类名：%s", class_getName(cls));
 }
 
 @end
